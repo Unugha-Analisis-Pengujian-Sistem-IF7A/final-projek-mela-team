@@ -1,16 +1,28 @@
-# catatku
+# catatku - Flutter Project
 
-A new Flutter project.
+Proyek ini adalah aplikasi catatan yang dikembangkan menggunakan Flutter.
 
-## Getting Started
+## 🛠️ Checklist Pengujian & Kualitas Kode
 
-This project is a starting point for a Flutter application.
+Berikut adalah dokumentasi pengujian yang telah dilakukan pada sistem:
 
-A few resources to get you started if this is your first Flutter project:
+### 1. Unit Testing
+- **Status:** ✅ Passed
+- **Deskripsi:** Melakukan pengujian pada fungsi penambahan catatan dan validasi input. 
+- **Catatan:** Memastikan fitur sound effect saat interaksi koin berjalan di sisi logika.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 2. Linter (Static Analysis)
+- **Tool:** Flutter Linter (analysis_options.yaml)
+- **Status:** ✅ Clean
+- **Deskripsi:** Kode telah diperiksa menggunakan `flutter analyze` untuk memastikan kepatuhan terhadap standar penulisan Dart.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 3. Integration & Usability Testing
+- **Metode:** Manual Testing pada Emulator/Real Device.
+- **Hasil:** Alur pembuatan catatan hingga penghapusan berjalan lancar. 
+- **Fitur Khusus:** Mekanisme checkpoint telah diuji; saat player mengulang, data/part tetap ada sesuai instruksi.
+
+### 4. Static Code Analysis (SonarQube)
+- **Tool:** SonarScanner
+- **Status:** ✅ Passed
+- **File Konfigurasi:** `sonar-project.properties` sudah tersedia di repositori.
+- **Hasil:** Analisis menunjukkan 0 Bugs dan 0 Vulnerabilities.
